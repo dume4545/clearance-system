@@ -29,7 +29,7 @@ const FACULTY_PROGRAMMES = {
     "Political Science",
     "International Relations",
     "Sociology",
-    "International Law & Diplomacy"
+    "International Law & Diplomacy", 
   ],
   "Justice Deborah School of Law": ["Law"],
   "School of Education and Humanities": [
@@ -206,11 +206,7 @@ export default function Register() {
       <div className="w-full max-w-xl">
         {/* Header */}
         <div className="text-center mb-8">
-<<<<<<< HEAD
         
-=======
-          
->>>>>>> a8ab0f1133fb7bbd06163066d09088260142bf6d
         <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-white/10 border border-white/20 text-white mb-5">
           <GraduationCap size={32} />
         </div>

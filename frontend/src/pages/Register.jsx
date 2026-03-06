@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
+import { GraduationCap } from "lucide-react";
 import api from "../services/api";
 
 // ── Faculty → Programmes map (mirrors DB enum/set exactly) ────────────────
@@ -205,7 +206,10 @@ export default function Register() {
       <div className="w-full max-w-xl">
         {/* Header */}
         <div className="text-center mb-8">
-          <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-white/10 border border-white/20 text-2xl mb-4">🎓</div>
+        
+        <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-white/10 border border-white/20 text-white mb-5">
+          <GraduationCap size={32} />
+        </div>
           <h1 className="fraunces text-3xl font-bold text-white">Create Account</h1>
           <p className="text-blue-200 text-sm mt-2">Babcock University Online Clearance System</p>
         </div>

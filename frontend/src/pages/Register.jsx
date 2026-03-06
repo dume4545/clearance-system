@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
+import { GraduationCap } from "lucide-react";
 import api from "../services/api";
 
 // ── Faculty → Programmes map (mirrors DB enum/set exactly) ────────────────

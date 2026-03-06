@@ -7,7 +7,8 @@ if ($path === '' || $path === '/') {
     exit;
 }
 
-$phpFile = __DIR__ . $path . '.php';
+// Map /auth/register → /api/auth/register.php
+$phpFile = __DIR__ . '/api' . $path . '.php';
 
 if (is_file($phpFile)) {
     require $phpFile;
@@ -15,4 +16,5 @@ if (is_file($phpFile)) {
 }
 
 http_response_code(404);
+header('Content-Type: application/json');
 echo json_encode(['success' => false, 'message' => "Route not found: $path"]);

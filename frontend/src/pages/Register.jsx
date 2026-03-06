@@ -205,7 +205,7 @@ export default function Register() {
       <div className="w-full max-w-xl">
         {/* Header */}
         <div className="text-center mb-8">
-          <div className="text-center mb-12">
+          
         <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-white/10 border border-white/20 text-white mb-5">
           <GraduationCap size={32} />
         </div>

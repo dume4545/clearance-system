@@ -12,9 +12,6 @@ RUN echo '<VirtualHost *:80>\n\
         AllowOverride All\n\
         Require all granted\n\
     </Directory>\n\
-    Header always set Access-Control-Allow-Origin "*"\n\
-    Header always set Access-Control-Allow-Methods "GET, POST, PUT, DELETE, OPTIONS"\n\
-    Header always set Access-Control-Allow-Headers "Content-Type, Authorization, Accept"\n\
 </VirtualHost>' > /etc/apache2/sites-available/000-default.conf
 
 RUN mkdir -p /var/www/html/uploads \
